@@ -1,0 +1,192 @@
+/* RESET */
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* NAVIGATION */
+nav {
+display: flex;
+align-items: center;
+justify-content: space-around;
+background-color: darkblue;
+}
+
+nav img {
+width: 5rem;
+}
+
+nav a {
+font-size: 1.5rem;
+color: white;
+text-decoration: none;
+}
+
+nav .link a {
+margin: 1rem;
+}
+
+/* HOME */
+.home {
+margin: 1rem;
+}
+
+/* HOME PICTURE */
+.home_img {
+width: 80vw;
+height: 50vw;
+margin: 1rem auto;
+background-image: url("./image/home.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+}
+
+/* HOME TEXT */
+.home_text {
+margin: 1rem;
+color: darkblue;
+}
+
+.home_text h1 {
+margin-bottom: 1rem;
+font-size: 2rem;
+}
+
+/* DESTINATIONS */
+.card-box {
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: lightblue;
+padding: 1rem;
+}
+
+/* SHARED LOOK OF EVERY CARD */
+.card {
+position: relative;
+width: 40vw;
+height: 40vw;
+margin: 1rem;
+border: 0.25rem solid lightgray;
+border-radius: 3rem;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+}
+
+/* PARIS PICTURE */
+.view2 {
+background-image: url("./image/paris.jpg");
+}
+
+/* BALI PICTURE */
+.view {
+background-image: url("./image/bali.jpg");
+}
+
+/* TEXT ON TOP OF THE PICTURE */
+.overlay {
+position: absolute;
+bottom: 2rem;
+width: 100%;
+font-size: 2rem;
+text-align: center;
+color: white;
+background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* ABOUT */
+.about {
+margin: 1rem;
+padding: 2rem;
+text-align: center;
+background-color: white;
+color: darkblue;
+}
+
+.about h1 {
+margin-bottom: 1rem;
+}
+
+.about p {
+line-height: 1.6;
+}
+
+/* CONTACT */
+.contact {
+margin: 1rem;
+padding: 2rem;
+text-align: center;
+background-color: lightblue;
+}
+
+.contact h1 {
+margin-bottom: 1rem;
+}
+
+.contact form {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin: 1rem;
+}
+
+.contact input {
+padding: 0.8rem;
+margin: 0.5rem;
+width: 80%;
+max-width: 300px;
+}
+
+.contact button {
+padding: 0.8rem 2rem;
+margin: 0.5rem;
+background-color: darkblue;
+color: white;
+border: none;
+cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+margin: 1rem;
+padding: 1rem;
+background-color: darkblue;
+color: white;
+text-align: center;
+border-radius: 0.5rem;
+}
+
+/* MEDIA QUERY */
+@media screen and (min-width: 600px) {
+
+/* MAKE PARAGRAPHS BIGGER */
+p {
+font-size: 1.25rem;
+}
+
+/* CARDS SIDE BY SIDE */
+.card-box {
+ flex-direction: row;
+ justify-content: space-around;
+}
+
+/* PICTURE BESIDE TEXT */
+.home {
+display: flex;
+align-items: center;
+}
+
+.home_img {
+  width: 50vw;
+ height: 30vw;
+}
+
+.home_text {
+width: 50vw;
+margin: 1rem;
+}
+
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore the World</title>
+
+  <!-- normalize.css makes default styles look the same across browsers.
+      Very popular - to use it, uncomment the line below. -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"> -->
+
+ 
+  <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <!-- Picture way 1: an <img> tag in the HTML -->
+    <img src="./image/logo.jpg" alt="Travel logo">
+
+    <!-- Each href="#..." jumps to the element with that id further down the page -->
+    <div class="link">
+      <a href="#home">Home</a>
+      <a href="#menu">Destination</a>
+      <a href="#about">About</a>
+    </div>
+  </nav>
+
+  <!-- HOME -->
+  <section class="home" id="home">
+    <!-- Picture way 2: an empty <div> with a background-image in the CSS -->
+    <div class="home_img"></div>
+
+    <div class="home_text">
+      <h1>Explore the World</h1>
+      <p>
+Welcome to our travel website!
+Discover beautiful places, amazing beaches
+and unforgettable adventures.
+Your next journey starts here!
+    
+      </p>
+    </div>
+  </section>
+
+  <!-- DESTINATIONS -->
+  <section class="card-box" id="menu">
+    
+    <div class="card view2">
+      <!-- Text placed on top of the picture with CSS positioning -->
+      <p class="overlay">Paris, France</p>
+    </div>
+
+    <div class="card view">
+      <!-- Text placed on top of the picture with CSS positioning -->
+      <p class="overlay">Bali, Indonsia</p>
+    </div>
+  </section>
+
+
+  <!-- ABOUT US-->
+  <section class="about" id="about">
+    <h1>About Us</h1>
+
+    <p>
+      We love travelling and discovering new places.
+      Our mission is to inspeire people to explore the world, experience different cultures and create beautiful memories.
+      </p>
+  </section>
+
+  <!-- CONTACT-->
+  <section class="contact" id="contact">
+    <h1>Contact Us</h1>
+    <form>
+      <input type="text" placeholder="Name" aria-label="Name">
+      <!-- type="email": the browser checks the value looks like an email -->
+      <input type="email" placeholder="Email" aria-label="Email">
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+<!-- FOOTER-->
+  <footer>
+  
+    <p>Explore the World  2026  
+    </p>
+  </footer>
+
+</body>
+
+</html>
